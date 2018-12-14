@@ -1,0 +1,220 @@
+html, body{
+    margin:0px;
+}
+
+.header, .footer{
+    background: #000;
+    color:#E44D26;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    padding:10px 30px 10px 30px;
+    box-sizing: border-box;
+}
+
+.header .logo{
+    width:50px;
+    height:50px;
+}
+
+.header .logo img, 
+.imagen-principal img{
+    width:100%;
+    height:auto;
+}
+
+.nav ul{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav ul li{
+    margin-left: 10px;
+}
+
+.imagen-principal{
+    width:80%;
+    max-width:800px;  
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.que-somos{
+    background: #F1F1F1;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.logos-sociales{
+    display:flex;   
+}
+
+.logo-somos, .logos-sociales img, .redes img{
+    width: 50px;
+    height:50px;    
+}
+
+.hamburguesa{
+    display:none;
+}
+
+.logos-sociales img{
+    margin-left: 15px;
+}
+
+.logo-somos img{
+    width:100%;
+    height:auto;
+}
+
+.texto-somos{
+    max-width: 800px;
+    text-align: left;
+}
+
+.texto-somos .titulo{
+    color: #E44D26;
+    font-size: 1.5em;
+} 
+
+.nosotras{
+    display:flex;
+    justify-content: space-around;
+    padding: 40px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.persona{
+    display:flex;    
+    align-items: center;   
+}
+
+.persona .descripcion-persona{
+    margin-left: 10px;
+    text-align: center;
+    color: #E44D26;  
+}
+
+.persona .nombre-persona{
+    font-weight: bold;
+}
+
+.avatar{
+    width:100px;
+    height:100px;
+}
+
+.avatar img{
+    width:100%;
+    height:auto;
+}
+
+.contacto{
+    display:flex;
+    align-items: center;
+}
+
+.redes img{
+    width:20px;
+    height:20px;
+    margin-left: 15px;
+}
+
+.logo-mail{
+    width: 15px;
+    height:15px;
+    margin-right: 5px;
+}
+
+.logo-mail img{
+    height:auto;
+    width:100%;
+}
+
+@media only screen and (max-width: 600px){
+
+    .imagen-principal{
+        width: 100%;
+    }
+
+    .logo-somos, .logos-sociales{
+        display:none;
+    }
+
+    .texto-somos{
+        padding: 10px;
+    }
+
+    .hamburguesa{
+        display:block;
+    }
+
+    .nav ul{
+        display:none;
+    }
+
+    nav:hover ul{
+        display:flex;
+    }
+
+    .nav{
+        position: relative;
+    }
+
+    .nav ul{
+        position: absolute;
+        right: 0px;
+        flex-direction: column;
+        width: 200px;
+        align-items:center;
+        background: white;
+        padding: 0px;
+    }
+
+    .nav ul li{
+        margin-left: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .nosotras{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .persona{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .descipcion-persona{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 150px;
+        width:150px;
+        position: absolute;
+        text-align: center;
+    }
+
+    .nombre-persona, .nombre-puesto{
+        background: #f1f1f1;
+        border-radius: 5px;
+        padding: 3px;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
